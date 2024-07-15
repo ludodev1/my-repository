@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage</title>
+    <link rel="stylesheet" href="stage.css">
+    <script src="stage.js"></script>
+</head>
+
+<body>
+    <div class="grnde">
+        <div class="grand">
+
+            <div class="h">
+                <h1>Ma facture</h1>
+            </div>
+            <form action="#">
+                <div class="deux">
+                    <div class="deu">
+                        <div class="contain">
+                            <label for="name">Réference</label>
+                            <select name="ref" id="monSelect">
+                            </select>
+                            <label for="name" >Prix unitaire</label>
+                            <input type="number"id="pr" readonly >
+                            <label for="name" >Désignation</label>
+                            <input type="number" required placeholder="entrer un nonbre" id="de" value="1" min="1" max="9999">
+                            <label for="name" >Montant</label>
+                            <input type="number" id="mon" readonly>
+                        </div>
+                        <div class="fav">
+                            <label for="name">Montant HT</label><input type="number"  id="mont" readonly>
+                            <label for="name">Tva 19.25%</label><input type="number"  id="tv" readonly>
+                            <label for="name">Réduction</label><input type="number"  id="red" readonly>
+                            <label for="name">Montant TT</label><input type="text"  id="monh" readonly>
+
+                        </div>
+                    </div>
+                    <div class="ipt">
+                        <div class="inputh">
+                            <div class="g">
+                                <label for="logiciel">
+                                <input type="radio" name="radiobtn" id="logiciel"> <span>2%</span>
+                              </label>
+                                <label for="web">
+                                <input type="radio" name="radiobtn" id="web"> <span>5%</span>
+                              </label>
+                                <label for="mobile">
+                                <input type="radio" name="radiobtn" id="mobile" checked> <span>10%</span>
+                              </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="save">
+                    <button id="sav" onclick="majProduitDetails()">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
